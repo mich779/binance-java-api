@@ -33,6 +33,14 @@ public class BookTicker {
    */
   private String askQty;
 
+  public BookTicker(String symbol, String bidPrice, String bidQty, String askPrice, String askQty) {
+    this.symbol = symbol;
+    this.bidPrice = bidPrice;
+    this.bidQty = bidQty;
+    this.askPrice = askPrice;
+    this.askQty = askQty;
+  }
+
   public String getSymbol() {
     return symbol;
   }

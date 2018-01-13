@@ -22,9 +22,11 @@ import static com.binance.api.client.domain.account.NewOrder.marketBuy;
 public class OrdersExample {
 
   public static void main(String[] args) {
-    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance("YOUR_API_KEY", "YOUR_SECRET");
+    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance("QgcDXmZVxv0rmYB75pJSoktlhaeAyCMkDjJmFtsWEEZU3w8EFx2H1U8ZZBMSZxLeK", "Q8gYeSlYjnFPP4BNn7rpiDQXUvx9hx4d1abhuwRaXkwER7nreqfkhDj98ntgyVjp6");
     BinanceApiRestClient client = factory.newRestClient();
 
+
+    client.ping();
     // Getting list of open orders
     List<Order> openOrders = client.getOpenOrders(new OrderRequest("LINKETH"));
     System.out.println(openOrders);
