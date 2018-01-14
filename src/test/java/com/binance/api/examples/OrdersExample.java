@@ -22,7 +22,7 @@ import static com.binance.api.client.domain.account.NewOrder.marketBuy;
 public class OrdersExample {
 
   public static void main(String[] args) {
-    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance("QgcDXmZVxv0rmYB75pJSoktlhaeAyCMkDjJmFtsWEEZU3w8EFx2H1U8ZZBMSZxLeK", "Q8gYeSlYjnFPP4BNn7rpiDQXUvx9hx4d1abhuwRaXkwER7nreqfkhDj98ntgyVjp6");
+    BinanceApiClientFactory factory = BinanceApiClientFactory.newInstance("API_KEY", "API_SECRET");
     BinanceApiRestClient client = factory.newRestClient();
 
 
